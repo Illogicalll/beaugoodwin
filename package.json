@@ -38,6 +38,7 @@
 	"dependencies": {
 		"bits-ui": "^0.18.4",
 		"clsx": "^2.1.0",
+		"gh-pages": "^6.1.1",
 		"lucide-svelte": "^0.343.0",
 		"shadcn-svelte": "^0.8.0",
 		"svelte-radix": "^1.0.1",
