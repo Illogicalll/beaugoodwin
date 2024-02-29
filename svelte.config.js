@@ -6,6 +6,9 @@ const config = {
     adapter: adapter({
 			pages: 'docs',
 			assets: 'docs',
+      fallback: undefined,
+			precompress: false,
+			strict: true
 		}),
     paths: {
       base: process.env.NODE_ENV === 'production' ? '/beaugoodwin' : '',
