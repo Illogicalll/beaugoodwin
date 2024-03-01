@@ -7,7 +7,7 @@
 </script>
 
 <ThemeSwitch/>
-<div class="flex flex-col justify-center items-center h-screen">
+<div class="flex flex-col justify-center items-center h-svh">
   <h1 class="scroll-m-20 font-extrabold tracking-tight lg:text-9xl md: text-5xl text-center">Beau Goodwin</h1>
   <p class="text-center">website coming soon...</p>
   
