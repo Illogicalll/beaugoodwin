@@ -1,0 +1,24 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/api/posts": [
+		"src/routes/api/posts/+server.ts"
+	],
+	"/login": [
+		"src/routes/login/+page.server.ts",
+		"src/routes/+layout.ts"
+	],
+	"/new": [
+		"src/routes/+layout.ts"
+	],
+	"/posts": [
+		"src/routes/posts/+page.server.ts",
+		"src/routes/+layout.ts"
+	],
+	"/posts/[post]": [
+		"src/routes/posts/[post]/+page.server.ts",
+		"src/routes/+layout.ts"
+	]
+}
