@@ -87,4 +87,11 @@ html {
 
 body {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
