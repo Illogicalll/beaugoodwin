@@ -7,7 +7,7 @@
 
 <div class="flex flex-col justify-center items-center h-svh space-y-4">
 	<h1 class="scroll-m-20 font-extrabold tracking-tight lg:text-9xl md: text-5xl text-center">
-		Blog
+		Contact
 	</h1>
 	<p class="text-center">section coming soon..</p>
 </div>
