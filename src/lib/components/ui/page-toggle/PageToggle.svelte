@@ -47,7 +47,7 @@
 </script>
 
 <div
-	class="toggle-bar"
+	class="toggle-bar z-50"
 	style="position: fixed; bottom: {isBottomQuarter
 		? '3%'
 		: '-400px'}; background-color: {backgroundColor}; border-radius: 9px; padding: 5px; opacity: {isBottomQuarter
@@ -55,7 +55,7 @@
 		: '0.4'};  transition: bottom 0.4s ease, opacity 0.1s ease, background-color 0.3s ease;"
 >
 	<ToggleGroup.Root size="lg" type="single" onValueChange={handlePageChange}>
-		<Tooltip.Root>
+		<Tooltip.Root openDelay={50}>
 			<Tooltip.Trigger>
 				<ToggleGroup.Item
 					value=""
@@ -68,7 +68,7 @@
 			</Tooltip.Trigger>
 			<Tooltip.Content>Home</Tooltip.Content>
 		</Tooltip.Root>
-		<Tooltip.Root>
+		<Tooltip.Root openDelay={50}>
 			<Tooltip.Trigger>
 				<ToggleGroup.Item
 					value="blog"
