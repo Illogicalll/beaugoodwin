@@ -100,18 +100,18 @@
 		if (p1.innerHTML !== '') {
 			new Typed('#p3', {
 				strings: [
-					'`I am a huge fan of indie-rock music, with my favourite artists being Inhaler and Arctic Monkeys.` ^150 `I listen to a wide variety of music though, examples being Clairo, Harry Styles, Jeff Buckley, The Cure, The Smiths, Joy Division, etc…` ^150 `I taught myself how to play the guitar by listening to the Arctic Monkeys and watching their live performances.` ^150 `My dream of being a music journalist is due to my love of music and how I constantly consume music in various forms.` ^150 `I also adore English and reading, prose or poetry, and therefore being a music journalist is a perfect fusion of those interests.`'
+					'`I am a huge fan of indie-rock music, with my favourite artists being Inhaler and Arctic Monkeys.` ^120 `I listen to a wide variety of music though, examples being Clairo, Harry Styles, Jeff Buckley, The Cure, The Smiths, Joy Division, etc…` ^150 `I taught myself how to play the guitar by listening to the Arctic Monkeys and watching their live performances.` ^150 `My dream of being a music journalist is due to my love of music and how I constantly consume music in various forms.` ^150 `I also adore English and reading, prose or poetry, and therefore being a music journalist is a perfect fusion of those interests.`'
 				]
 			});
 			backButton.classList.add('hidden');
-			await delay(2550);
+			await delay(2530);
 			new Typed('#p1', { strings: ['^800My name is'], typeSpeed: 0 });
 			new Typed('#p2', {
-				strings: ['^1000and I am a journalist based in the south-east/london.'],
+				strings: ['^950and I am a journalist based in the south-east/london.'],
 				typeSpeed: 0
 			});
 			br.classList.add('hidden');
-			await delay(200);
+			await delay(240);
 		}
 		backButton.classList.add('hidden');
 		page.classList.remove('hidden');
