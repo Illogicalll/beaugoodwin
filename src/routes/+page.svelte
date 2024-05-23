@@ -33,14 +33,14 @@
 
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
-      await delay(1000);
-      Bowser.getParser(window.navigator.userAgent).getResult().platform.type === 'mobile'
+			Bowser.getParser(window.navigator.userAgent).getResult().platform.type === 'mobile'
       ? (isDesktop = false)
       : toast.info('Move the cursor down here to navigate!', {
-        duration: 1700,
+				duration: 1700,
         style: 'position: fixed; width: auto; transform: translateX(5%);'
       });
       new Typed('#hero', { strings: ['^300Beau ^20 Goodwin'], typeSpeed: 50 });
+			await delay(1000);
 			buttonRow.classList.remove('opacity-0');
 			buttonRow.classList.add('opacity-100');
 		}

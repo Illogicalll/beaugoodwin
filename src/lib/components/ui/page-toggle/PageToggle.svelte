@@ -9,8 +9,10 @@
 
 	let curPage = $page.url.pathname;
 
-	let handlePageChange = () => {
-		goto(curPage === '/' ? '/blog' : '/');
+	let handlePageChange = (value: string | undefined) => {
+		if (value) {
+			goto(value);
+		}
 	};
 
 	let backgroundColor = '';
@@ -58,7 +60,7 @@
 		<Tooltip.Root openDelay={50}>
 			<Tooltip.Trigger>
 				<ToggleGroup.Item
-					value=""
+					value="/"
 					aria-label="Home"
 					data-state={curPage === '/' ? 'on' : 'off'}
 					disabled={curPage === '/'}
@@ -71,7 +73,7 @@
 		<Tooltip.Root openDelay={50}>
 			<Tooltip.Trigger>
 				<ToggleGroup.Item
-					value="blog"
+					value="/blog"
 					aria-label="Blog"
 					data-state={curPage !== '/' ? 'on' : 'off'}
 					disabled={curPage === '/blog/'}
