@@ -84,14 +84,16 @@
   }
 
 	async function loadAnim() {
-		pageContent.classList.add('hidden');
-		pageContent.classList.add('opacity-0');
-		loadingContent.classList.remove('opacity-0');
-		await delay(500);
-		pageContent.classList.remove('hidden');
-		await delay(1500);
-		pageContent.classList.remove('opacity-0');
-		loadingContent.classList.add('opacity-0');
+		if(isDesktop) {
+			pageContent.classList.add('hidden');
+			pageContent.classList.add('opacity-0');
+			loadingContent.classList.remove('opacity-0');
+			await delay(500);
+			pageContent.classList.remove('hidden');
+			await delay(1500);
+			pageContent.classList.remove('opacity-0');
+			loadingContent.classList.add('opacity-0');
+		}
 	}
 
   $: if (api) {
