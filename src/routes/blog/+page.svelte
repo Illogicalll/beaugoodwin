@@ -18,7 +18,9 @@
 	let cardContent: HTMLDivElement;
 
 	function hideCard() {
-		cardContent.parentElement?.classList.add('hidden');
+		try {
+			cardContent.parentElement?.classList.add('hidden');
+		} catch (e) {};
 	}
 
 	let categoryContent: Record<string, { icon: string; description: string; }> = {
