@@ -11,6 +11,7 @@
   import * as Card from "$lib/components/ui/card/index.js";
   import { darkMode } from '$lib/ThemeSwitch.svelte';
 	import { formatDate } from '$lib/utils';
+	import { goto } from '$app/navigation';
 
   export let data;
   let posts = data.posts;
@@ -50,8 +51,16 @@
 		}
   };
 
+	function forceRefresh() {
+		window.location.reload();
+	}
+
 	onMount(() => {
-		console.log('hello')
+		window.onerror = function (message, source, lineno, colno, error) {
+			console.error('Global error caught:', { message, source, lineno, colno, error });
+			forceRefresh();
+			return true;
+		};
     contentLoaded.domContentLoaded = true;
     checkAllContentLoaded();
 		handleResize();

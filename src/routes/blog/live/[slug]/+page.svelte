@@ -6,6 +6,7 @@
   import * as Tooltip from '$lib/components/ui/tooltip';
 	import { Button } from "$lib/components/ui/button/index.js";
 	import { goto } from '$app/navigation';
+	import { onMount } from 'svelte';
 
 	export let data;
 
@@ -20,6 +21,19 @@
 				console.error('Failed to copy: ', err);
 		});
 	}
+
+	let isDesktop = false;
+  const handleResize = () => {
+    isDesktop = window.innerWidth > 1100;
+  };
+
+	onMount(() => {
+		handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
 
 </script>
 
@@ -42,7 +56,7 @@
 <div class="w-full min-h-screen flex flex-col justify-start items-center text-center pt-28 pb-28">
     <h1 class="font-extrabold text-4xl">{data.meta.title}</h1>
     <p class="text-gray-700">{formatDate(data.meta.date)}</p>
-    <div class="max-w-[90%] text-left pt-14">
+    <div class="{isDesktop ? 'max-w-[50%]' : 'max-w-[90%]'} text-left pt-14">
         <svelte:component this={data.content} />
     </div>
 </div>
