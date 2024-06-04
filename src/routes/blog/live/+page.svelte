@@ -110,54 +110,6 @@
   }
 </script>
 
-<style lang="postcss">
-  .grad {
-    width: 400px;
-    height: 101%;
-  }
-
-  .grad-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    z-index: 40;
-  }
-
-  .left, .right {
-    flex-grow: 1;
-    height: 101%;
-    width: calc((100vw - 400px)/2);
-    background-color: rgb(226,232,240);
-  }
-
-  :global(.dark) .left,
-  :global(.dark) .right {
-    background-color: rgb(2,6,23);
-  }
-	
-	.smallphone {
-		transform: translateY(-10%);
-	}
-
-	@media screen and (min-height: 700px) {
-		.w-svw {
-			@apply pl-16;
-			@apply pr-16;
-			transform: translateY(0);
-		}
-
-		.smallphone {
-			transform: translateY(-2%);
-		}
-	}
-</style>
-
 <div bind:this={loadingContent} class="fixed w-svw h-svh flex items-center justify-center {isDesktop ? '' : 'hidden'}" style={"transition: opacity 0.5s ease;"}>
 	<img src={Loading} alt="Loading" class="w-12 h-auto"/>
 </div>
@@ -266,9 +218,7 @@
 				{/if}
 			</div>
 		{/if}
-
 	</div>
-
 
 	<div class="absolute bottom-6 left-0 right-0 flex justify-center">
 		<PageToggle />
