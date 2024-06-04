@@ -1,5 +1,4 @@
 <script lang="ts" context="module">
-
 	import { writable } from 'svelte/store';
 
 	export const darkMode = writable(true);
@@ -14,7 +13,7 @@
 			return newDarkMode;
 		});
 	}
-	
+
 </script>
 
 <div class="absolute top-4 right-14 z-50">

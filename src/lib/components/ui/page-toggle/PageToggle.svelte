@@ -48,40 +48,40 @@
 	}
 </script>
 
-<div
-	class="toggle-bar z-50"
-	style="position: fixed; bottom: {isBottomQuarter
-		? '3%'
-		: '-400px'}; background-color: {backgroundColor}; border-radius: 9px; padding: 5px; opacity: {isBottomQuarter
-		? '1'
-		: '0.4'};  transition: bottom 0.4s ease, opacity 0.1s ease, background-color 0.3s ease;"
->
-	<ToggleGroup.Root size="lg" type="single" onValueChange={handlePageChange}>
-		<Tooltip.Root openDelay={50}>
-			<Tooltip.Trigger>
-				<ToggleGroup.Item
-					value="/"
-					aria-label="Home"
-					data-state={curPage === '/' ? 'on' : 'off'}
-					disabled={curPage === '/'}
-				>
-					<iconify-icon icon="ic:round-home"></iconify-icon>
-				</ToggleGroup.Item>
-			</Tooltip.Trigger>
-			<Tooltip.Content>Home</Tooltip.Content>
-		</Tooltip.Root>
-		<Tooltip.Root openDelay={50}>
-			<Tooltip.Trigger>
-				<ToggleGroup.Item
-					value="/blog"
-					aria-label="Blog"
-					data-state={curPage !== '/' ? 'on' : 'off'}
-					disabled={curPage === '/blog/'}
-				>
-					<iconify-icon icon="bi:book"></iconify-icon>
-				</ToggleGroup.Item>
-			</Tooltip.Trigger>
-			<Tooltip.Content>Blog</Tooltip.Content>
-		</Tooltip.Root>
-	</ToggleGroup.Root>
-</div>
+	<div
+		class="toggle-bar z-50"
+		style="position: fixed; bottom: {isBottomQuarter
+			? '3%'
+			: '-400px'}; background-color: {backgroundColor}; border-radius: 9px; padding: 5px; opacity: {isBottomQuarter
+			? '1'
+			: '0.4'};  transition: bottom 0.4s ease, opacity 0.1s ease, background-color 0.3s ease;"
+	>
+		<ToggleGroup.Root size="lg" type="single" onValueChange={handlePageChange}>
+			<Tooltip.Root openDelay={50}>
+				<Tooltip.Trigger>
+					<ToggleGroup.Item
+						value="/"
+						aria-label="Home"
+						data-state={curPage === '/' ? 'on' : 'off'}
+						disabled={curPage === '/'}
+					>
+						<iconify-icon icon="ic:round-home"></iconify-icon>
+					</ToggleGroup.Item>
+				</Tooltip.Trigger>
+				<Tooltip.Content>Home</Tooltip.Content>
+			</Tooltip.Root>
+			<Tooltip.Root openDelay={50}>
+				<Tooltip.Trigger>
+					<ToggleGroup.Item
+						value="/blog"
+						aria-label="Blog"
+						data-state={curPage !== '/' ? 'on' : 'off'}
+						disabled={curPage === '/blog/'}
+					>
+						<iconify-icon icon="bi:book"></iconify-icon>
+					</ToggleGroup.Item>
+				</Tooltip.Trigger>
+				<Tooltip.Content>Blog</Tooltip.Content>
+			</Tooltip.Root>
+		</ToggleGroup.Root>
+	</div>

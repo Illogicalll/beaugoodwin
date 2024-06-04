@@ -1,3 +1,5 @@
+import type { Cat } from "lucide-svelte";
+
 export type Categories = 'sveltekit' | 'svelte';
 
 export type Post = {
@@ -6,4 +8,7 @@ export type Post = {
   description: string;
   date: string;
   category: Categories[];
+  categories?: string[];
+  lat?: number;
+  long?: number;
 }

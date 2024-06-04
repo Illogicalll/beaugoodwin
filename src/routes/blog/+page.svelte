@@ -4,7 +4,6 @@
   import * as Avatar from '$lib/components/ui/avatar/index.js';
   import * as Tooltip from '$lib/components/ui/tooltip';
 	import * as HoverCard from '$lib/components/ui/hover-card';
-  import { darkMode } from '$lib/ThemeSwitch.svelte';
   import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import Typed from 'typed.js';
@@ -33,7 +32,7 @@
 	}
 
 	data.posts.forEach((post) => {
-		post.categories.forEach((category: string) => {
+		post.categories?.forEach((category: string) => {
 			if (!(cats.includes(category))) {
 				cats.push(category);
 			};

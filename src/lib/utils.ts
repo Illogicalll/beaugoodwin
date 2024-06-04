@@ -3,6 +3,13 @@ import { twMerge } from 'tailwind-merge';
 import { cubicOut } from 'svelte/easing';
 import type { TransitionConfig } from 'svelte/transition';
 
+type DateStyle = Intl.DateTimeFormatOptions['dateStyle'];
+
+export function formatDate(date: string, dateStyle: DateStyle = 'medium', locales = 'en') {
+	const formatter = new Intl.DateTimeFormat(locales, { dateStyle });
+	return formatter.format(new Date(date));
+}
+
 export function cn(...inputs: ClassValue[]) {
 	return twMerge(clsx(inputs));
 }
