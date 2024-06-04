@@ -41,7 +41,7 @@
 	cats.sort();
 
 	onMount(() => {
-		new Typed('#blog', { strings: ['^300Blog'], typeSpeed: 50 });
+		new Typed('#blog', { strings: ['^300Words'], typeSpeed: 50 });
 		const reveal = (async () => {
 			await delay(1000);
 			categoryList.classList.remove('opacity-0');
@@ -69,7 +69,7 @@
 	</Tooltip.Root>
 </div>
 <div class="flex flex-col h-svh items-center justify-center text-center space-y-10">
-	<h1 id="blog" class="font-extrabold tracking-tight text-9xl first-letter:montserrat-hero">Blog</h1>
+	<h1 id="blog" class="font-extrabold tracking-tight text-8xl first-letter:montserrat-hero">Words</h1>
 	<div class="flex flex-col space-y-5 opacity-0 categoryList" bind:this={categoryList}>
 		{#each cats as cat, index}
 			<a on:click={hideCard} href="/blog/{cat.toLowerCase()}">

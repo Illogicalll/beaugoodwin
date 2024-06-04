@@ -51,6 +51,7 @@
   };
 
 	onMount(() => {
+		console.log('hello')
     contentLoaded.domContentLoaded = true;
     checkAllContentLoaded();
 		handleResize();
@@ -200,7 +201,7 @@
 									<div class="p-1">
 										<Card.Root>
 											<Card.Content
-												class="flex flex-col min-w-48 aspect-square text-center items-center justify-center p-6"
+												class="flex flex-col min-w-[200px] aspect-square text-center items-center justify-center p-6"
 											>
 												<p>{post.title}</p>
 												<p class="text-slate-700">{formatDate(post.date)}</p>
