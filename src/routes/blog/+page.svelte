@@ -18,11 +18,11 @@
 	let categoryList: HTMLDivElement;
 	let cardContent: HTMLDivElement;
 
-	function hideCard() {
+	function hideCard(subsec: string) {
 		try {
 			cardContent.parentElement?.classList.add('hidden');
 			} catch (e) {};
-		goto("/blog/album");
+		window.location.href = "/blog/"+subsec.toLowerCase();
 	}
 
 	let categoryContent: Record<string, { icon: string; description: string; }> = {
@@ -77,7 +77,7 @@
 	<h1 id="blog" class="font-extrabold tracking-tight text-8xl first-letter:montserrat-hero">Words</h1>
 	<div class="flex flex-col space-y-5 opacity-0 categoryList" bind:this={categoryList}>
 		{#each cats as cat, index}
-			<button on:click={hideCard}>
+			<button on:click={() => hideCard(cat)}>
 				<HoverCard.Root closeDelay={0} openDelay={100}>
 					<HoverCard.Trigger
 						class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
