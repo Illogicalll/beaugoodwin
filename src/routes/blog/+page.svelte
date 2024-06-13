@@ -21,7 +21,8 @@
 	function hideCard() {
 		try {
 			cardContent.parentElement?.classList.add('hidden');
-		} catch (e) {};
+			} catch (e) {};
+		goto("/blog/album");
 	}
 
 	let categoryContent: Record<string, { icon: string; description: string; }> = {
@@ -76,7 +77,7 @@
 	<h1 id="blog" class="font-extrabold tracking-tight text-8xl first-letter:montserrat-hero">Words</h1>
 	<div class="flex flex-col space-y-5 opacity-0 categoryList" bind:this={categoryList}>
 		{#each cats as cat, index}
-			<a on:click={hideCard} href="/blog/{cat.toLowerCase()}">
+			<button on:click={hideCard}>
 				<HoverCard.Root closeDelay={0} openDelay={100}>
 					<HoverCard.Trigger
 						class="rounded-sm underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
@@ -90,7 +91,7 @@
 						</div>
 					</HoverCard.Content>
 				</HoverCard.Root>
-			</a>
+			</button>
 		{/each}
 	</div>
 </div>

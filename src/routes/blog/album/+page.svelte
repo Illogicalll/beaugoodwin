@@ -19,10 +19,6 @@
   };
 
 	onMount(() => {
-		// if (localStorage.getItem('theme') === 'light') {
-		// 	document.documentElement.classList.remove('dark');
-		// 	darkMode.set(false);
-		// }
 		handleResize();
     window.addEventListener('resize', handleResize);
 		ensureCSS();
