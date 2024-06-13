@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import ThemeSwitch from '$lib/ThemeSwitch.svelte';
+	import ThemeSwitch, { darkMode } from '$lib/ThemeSwitch.svelte';
 	import PageToggle from '$lib/components/ui/page-toggle/PageToggle.svelte';
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
   import * as Tooltip from '$lib/components/ui/tooltip';
 	import { onMount } from 'svelte';
 	import { register } from 'swiper/element/bundle';
-	import 'swiper/element/css/effect-coverflow';
+	import { hasRefreshed } from '$lib/stores';
 	
 	register();
 	export let data;
@@ -19,12 +19,24 @@
   };
 
 	onMount(() => {
+		if (localStorage.getItem('theme') === 'light') {
+			document.documentElement.classList.remove('dark');
+			darkMode.set(false);
+		}
 		handleResize();
     window.addEventListener('resize', handleResize);
+		ensureCSS();
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   });
+
+	function ensureCSS() {
+		if (!$hasRefreshed) {
+			window.location.reload();
+			hasRefreshed.set(true);
+		}
+	}
 
 	function goHome() {
     goto("/");

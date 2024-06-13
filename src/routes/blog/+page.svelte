@@ -6,6 +6,7 @@
 	import * as HoverCard from '$lib/components/ui/hover-card';
   import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { hasRefreshed } from '$lib/stores';
 	import Typed from 'typed.js';
   export let data;
 
@@ -48,6 +49,7 @@
 			await delay(1000);
 			categoryList.classList.remove('opacity-0');
 			categoryList.classList.add('opacity-100');
+			hasRefreshed.set(false);
 		})
 		reveal();
 	});

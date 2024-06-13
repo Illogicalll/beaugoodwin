@@ -8,6 +8,7 @@
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
 	import { darkMode } from '$lib/ThemeSwitch.svelte';
+	import { hasRefreshed } from '$lib/stores.js';
 
 	export let data;
 
@@ -39,8 +40,9 @@
   };
 
 	async function introAnim() {
-		await delay(200);
+		await delay(400);
 		pageContent.classList.remove('opacity-0');
+		hasRefreshed.set(false);
 	}
 
 	onMount(() => {
