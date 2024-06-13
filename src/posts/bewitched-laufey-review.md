@@ -4,6 +4,7 @@ description:
 date: '2023-10-15'
 categories:
   - Album
+img: 'https://upload.wikimedia.org/wikipedia/en/0/06/Laufey_-_Bewitched.png'
 ---
 
 *Bewitched* is Icelandic singer-songwriter Laufey’s second full-length LP. Following 2022’s *Everything I Know About Love*, *Bewitched* is a self-described album about love; platonic or romantic. With heavy inspiration from jazz artists, Laufey blends in beautifully with her idols with timeless tracks such as ‘From the Start’, ‘While You Were Sleeping’ and ‘Bewitched’.

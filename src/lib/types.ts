@@ -11,4 +11,5 @@ export type Post = {
   categories?: string[];
   lat?: number;
   long?: number;
+  img?: string;
 }

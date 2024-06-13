@@ -4,12 +4,14 @@ description:
 date: '2023-10-20'
 categories:
   - Album
+img: 'https://i.scdn.co/image/ab67616d00001e026a760642a56847027428cb61'
 ---
 
 When artists die their work, their life and their death become almost mythical and often help propel them to new levels of posthumous fame. This happened with Amy Winehouse, Kurt Cobain and Jeff Buckley. Buckley released only one studio album in his life, *Grace*, and a handful of live compilations were released after he died. His attempt at a second LP ‘Sketches for My Sweetheart the Drunk’ was released in May 1998, a year after he died.
 <br>
+
 *Grace* is steeped in grandeur and legend. Buckley is consistently remarked as ethereal-whether that’s the handful of live performances, his lyrics, the creative riff writing or the emotionally charged singing; there is this underpinning of emotion and greatness beneath everything he does and it is easy to see how he has become mystified since death.
-<br><br>
+<br>
 The album is a mixture of Buckley’s own writing and a handful of covers. These include ‘Lilac Wine’ by James Shelton, ‘Corpus Christi Carol’ (Traditional/Benjamin Britten) and most famously ‘Hallelujah’ by Leonard Cohen. These songs, despite not being original songs by Buckley, do not falter in the emotionally provocative performances seen in Buckley’s songs. They managed to co-exist on the record, not weakening or overshadowing the LP as a whole or the other tracks, and with the case of ‘Hallelujah’ Buckley received a boost in popularity and attention.
 <br><br>
 The beauty of *Grace* is that throughout it is honest - all emotions are bared and Buckley is completely vulnerable. This lends itself to these heartbreaking climaxes and bridges: the “It’s never over…” bridge in ‘Lover, You Should’ve Come Over’ being a perfect example of these intimate moments he allows the listener to enter into. The vocal performances for each of these impassioned moments on the LP vary from Buckley singing powerful crescendos like in the eponymous song to these quieter, almost whispering sections-seen in ‘Mojo Pin’. His vocal performance was so moving it led to Thom Yorke from Radiohead taking heavy inspiration and moulding his own style after hearing it. The control over his voice throughout each track, every note meant and never delivering an underwhelming line.

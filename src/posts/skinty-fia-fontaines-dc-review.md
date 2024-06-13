@@ -4,6 +4,7 @@ description:
 date: '2023-10-18'
 categories:
   - Album
+img: 'https://upload.wikimedia.org/wikipedia/en/d/df/Fontaines_D.C._-_Skinty_Fia.png'
 ---
 
 *Skinty Fia* is Fontaines D.C.’s 3rd album and their most sonically ambitious. Combining the powerfully blunt yet still poet lyricism of their debut *Dogrel* with the psychedelic and, at times, shoegaze-influenced guitars of *A Hero’s Death*; a significant departure from post-punk itself.

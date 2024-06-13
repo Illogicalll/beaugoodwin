@@ -81,7 +81,7 @@
 						<iconify-icon icon="bi:book"></iconify-icon>
 					</ToggleGroup.Item>
 				</Tooltip.Trigger>
-				<Tooltip.Content>Blog</Tooltip.Content>
+				<Tooltip.Content>Words</Tooltip.Content>
 			</Tooltip.Root>
 		</ToggleGroup.Root>
 	</div>
