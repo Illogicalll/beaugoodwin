@@ -98,7 +98,9 @@
 
   $: if (api) {
     api.on("select", () => {
-      globe.pointOfView({ lat: posts[api.selectedScrollSnap()]['lat'], lng: posts[api.selectedScrollSnap()]['long'], altitude: zoomLevel }, 900);
+			try {
+				globe.pointOfView({ lat: posts[api.selectedScrollSnap()]['lat'], lng: posts[api.selectedScrollSnap()]['long'], altitude: zoomLevel }, 900);
+			} catch (e) {}
     });
     contentLoaded.carouselReady = true;
     checkAllContentLoaded();
