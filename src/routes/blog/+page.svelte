@@ -19,9 +19,9 @@
 	let cardContent: HTMLDivElement;
 
 	function hideCard(subsec: string) {
-		try {
+		if (isDesktop) {
 			cardContent.parentElement?.classList.add('hidden');
-			} catch (e) {};
+		}
 		window.location.href = "/blog/"+subsec.toLowerCase();
 	}
 
@@ -44,7 +44,13 @@
 	});
 	cats.sort();
 
+	let isDesktop = false;
+  const handleResize = () => {
+    isDesktop = window.innerWidth > 1100;
+  };
+
 	onMount(() => {
+		window.addEventListener('resize', handleResize);
 		new Typed('#blog', { strings: ['^300Words'], typeSpeed: 50 });
 		const reveal = (async () => {
 			await delay(1000);

@@ -23,7 +23,7 @@
   }
 
 	function goBack() {
-		goto("../../" + data.url.split('/')[2]);
+		window.location.href = "../../" + data.url.split('/')[2];
 	}
 
 	 function copyToClipboard() {

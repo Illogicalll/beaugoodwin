@@ -2,7 +2,6 @@
   import { onMount } from 'svelte';
   import ThemeSwitch from '$lib/ThemeSwitch.svelte';
   import PageToggle from '$lib/components/ui/page-toggle/PageToggle.svelte';
-	import Loading from '$lib/assets/loading.gif';
   import * as Carousel from "$lib/components/ui/carousel/index.js";
   import * as Card from "$lib/components/ui/card/index.js";
 	import { formatDate } from '$lib/utils';
