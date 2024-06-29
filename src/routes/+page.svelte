@@ -24,25 +24,30 @@
 	let page: HTMLDivElement;
 	let aboutCard: HTMLDivElement;
 	let backCard: HTMLDivElement;
+	let contactCard: HTMLDivElement | any;
 
+	contactCard = null;
+
+	let ready = false;
 	let isDesktop = true;
 
-  function delay(ms: number) {
+	function delay(ms: number) {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
 
 	onMount(async () => {
 		if (typeof window !== 'undefined') {
 			Bowser.getParser(window.navigator.userAgent).getResult().platform.type === 'mobile'
-      ? (isDesktop = false)
-      : toast.info('Move the cursor down here to navigate!', {
-				duration: 1700,
-        style: 'position: fixed; width: auto; transform: translateX(5%);'
-      });
-      new Typed('#hero', { strings: ['^300Beau ^20 Goodwin'], typeSpeed: 50 });
+				? (isDesktop = false)
+				: toast.info('Move the cursor down here to navigate!', {
+						duration: 1700,
+						style: 'position: fixed; width: auto; transform: translateX(5%);'
+					});
+			new Typed('#hero', { strings: ['^300Beau ^20 Goodwin'], typeSpeed: 50 });
 			await delay(1000);
 			buttonRow.classList.remove('opacity-0');
 			buttonRow.classList.add('opacity-100');
+			ready = true;
 		}
 	});
 
@@ -136,6 +141,14 @@
 	let dialogOpen = false;
 	let drawerOpen = false;
 
+	if (ready && contactCard) {
+		if (dialogOpen) {
+			contactCard.parentElement?.classList.add('hidden');
+		} else {
+			contactCard.parentElement?.classList.remove('hidden');
+		}
+	}
+
 	function openDialog() {
 		dialogOpen = true;
 	}
@@ -143,7 +156,31 @@
 	function openDrawer() {
 		drawerOpen = true;
 	}
+
+	function portfolioRedirect() {
+		window.location.href = 'https://www.w-murphy.com/';
+	}
 </script>
+
+<div class="absolute top-6 left-4">
+	<button on:click={portfolioRedirect}>
+		<HoverCard.Root closeDelay={0} openDelay={100}>
+			<HoverCard.Trigger
+				class="rounded-sm underline-offset-2 hover:underline focus-visible:outline-2 focus-visible:outline-offset-8 focus-visible:outline-black"
+			>
+				<iconify-icon icon="mingcute:code-line"></iconify-icon>
+			</HoverCard.Trigger>
+			<HoverCard.Content class="w-50">
+				<div class="flex justify-between items-center space-x-4">
+					<div class="space-y-1">
+						<h4 class="text-sm font-semibold">website by will</h4>
+						<span class="text-xs text-muted-foreground">click to see portfolio</span>
+					</div>
+				</div>
+			</HoverCard.Content>
+		</HoverCard.Root>
+	</button>
+</div>
 
 <ThemeSwitch />
 
@@ -204,7 +241,7 @@
 					contact
 				</HoverCard.Trigger>
 				<HoverCard.Content class="w-50">
-					<div class="flex justify-between items-center space-x-4">
+					<div bind:this={contactCard} class="flex justify-between items-center space-x-4">
 						<iconify-icon icon="vaadin:connect-o"></iconify-icon>
 						<div class="space-y-1">
 							<h4 class="text-sm font-semibold">reach out</h4>
@@ -262,7 +299,7 @@
 				<div class="grid gap-2">
 					<Button href="mailto:contact@beaugoodwin.com">
 						<iconify-icon icon="material-symbols:mail-outline" class="pr-1"></iconify-icon>
-						contact@beaugoodwin.com
+						Send me an E-Mail
 					</Button>
 				</div>
 			</Dialog.Content>
