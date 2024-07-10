@@ -1,12 +1,12 @@
-﻿---
+---
 layout: default
 title: Men I Trust Live At Troxy
 description:
 date: '2023-07-20'
 categories:
   - Live
-- lat: 51.513078527203696
-- long: -0.04407856986132023
+lat: 51.513078527203696
+long: -0.04407856986132023
 ---
 
 Men I Trust, a dream-pop/shoegaze band from Montreal, Canada, performed a spectacular set at Troxy in London.
