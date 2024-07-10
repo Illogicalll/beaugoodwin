@@ -1,12 +1,12 @@
-﻿---
-layout: default 
+---
+layout: default
 title: Inhaler Cambridge Live Review
 description:
-date: '2022-06-20' 
+date: '2022-06-20'
 categories:
--   Live 
-- lat: 52.19082019196194
-- long: 0.13647366743965297
+  - Live
+lat: 52.19082019196194
+long: 0.13647366743965297
 ---
 
 Inhaler, the hottest thing to come out of Dublin since a wagon load of Guinness caught fire, rolled into Cambridge on Wednesday evening to have one last run through of their set ahead of Glastonbury this Friday (June 24).
