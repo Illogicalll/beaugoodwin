@@ -48,9 +48,6 @@
 	onMount(() => {
 		handleResize();
     window.addEventListener('resize', handleResize);
-		window.addEventListener('vite:preloadError', (event) => {
-    	window.location.reload();
-		})
 		introAnim();
     return () => {
       window.removeEventListener('resize', handleResize);
