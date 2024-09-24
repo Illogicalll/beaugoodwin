@@ -16,8 +16,10 @@
 	let pageContent: HTMLDivElement;
 	let scoreElement: HTMLDivElement | null = null;
 	let displayedScore = 0;
-	let finalScore = parseFloat(data.meta.rating.toFixed(1)) || 0; // Ensure it's a float with 1 decimal precision
-
+	let finalScore: number | null = null;
+	if (data.meta.rating) {
+		finalScore = parseFloat(data.meta.rating.toFixed(1)) || 0;
+	}
 	function delay(ms: number) {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
@@ -45,21 +47,21 @@
 		isDesktop = window.innerWidth > 1100;
 	};
 
-	// Function to map score to a color gradient from dark red (0) to bright green (10)
 	function getScoreColor(score: number) {
 		const red = Math.floor(255 * (1 - score / 10));
 		const green = Math.floor(255 * (score / 10));
 		return `rgb(${red}, ${green}, 0)`;
 	}
 
-	// Animation to count up the score and change color
 	async function animateScore() {
-		const increment = 0.1; // Increment by 0.1 for fractional support
-		const stepTime = (1000 / Math.abs(finalScore - displayedScore)) * 0.08; // Adjust time based on score difference
-
-		for (let i = displayedScore; i <= finalScore; i = parseFloat((i + increment).toFixed(1))) {
-			displayedScore = parseFloat(i.toFixed(1)); // Fix to 1 decimal place for display
-			await delay(stepTime);
+		const increment = 0.1;
+		let stepTime: number | null = null;
+		if (finalScore) {
+			stepTime = (1000 / Math.abs(finalScore - displayedScore)) * 0.08;
+			for (let i = displayedScore; i <= finalScore; i = parseFloat((i + increment).toFixed(1))) {
+				displayedScore = parseFloat(i.toFixed(1));
+				await delay(stepTime);
+			}
 		}
 	}
 

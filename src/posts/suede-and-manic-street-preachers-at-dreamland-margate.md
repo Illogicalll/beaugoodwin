@@ -1,25 +1,19 @@
-﻿
----
+﻿---
 layout: default
 title: Suede and Manic Street Preachers at Dreamland Margate
 description:
 date: '2024-07-19'
 categories:
   - Live
-lat: 51.38520296950843 
+lat: 51.38520296950843
 long: 1.3772345153434356
 ---
-
-
-
-
-
 
 90s legends Suede and Manic Street Preachers were the latest bands to grace the Scenic Stage at Dreamland last night.
 
 With a 17-song set each, the iconic British bands took the crowd through a nostalgia-filled joy ride.
 
-The weather was perfect for the show which was part of the  Margate Summer Series. With clear, blue skies and a 25-26 degree heat, the audience were treated to a special evening of back to back impressive sets.
+The weather was perfect for the show which was part of the Margate Summer Series. With clear, blue skies and a 25-26 degree heat, the audience were treated to a special evening of back to back impressive sets.
 
 Manic Street Preachers kicked off with energetic songs You Love Us and Everything Must Go, keeping the octane pace going as they then transitioned into Motorcycle Emptiness.
 
@@ -27,7 +21,7 @@ Calming down to a slower pace, something “from the Holy Bible era” according
 
 This alternating pace was seen in the sets of both bands, ensuring that throughout the long, 17-song performances the audience remained captivated and engaged.
 
-Margate was also treated to a surprise cover near the end of their set, with the band performing Suicide Is Painless, the famous Theme From M*A*S*H.
+Margate was also treated to a surprise cover near the end of their set, with the band performing Suicide Is Painless, the famous Theme From M*A*S\*H.
 
 James Dean Bradfield had previous memories of the town, last night being their third time here he said. The first time he came was for a Radio 1 Roadshow and he ended up “losing a fortune on the fruit machines”. This led to a hilarious exchange with the crowd where he remarked: “Arcade and chippies - what more can you want?” Before then advising them to “gamble responsibly”.
 
