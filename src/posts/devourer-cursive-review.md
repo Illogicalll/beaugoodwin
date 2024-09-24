@@ -1,0 +1,33 @@
+﻿
+---
+layout: default
+title: Devourer - Cursive
+description:
+date: '2024-09-12'
+categories:
+  - Album
+img: https://i.scdn.co/image/ab67616d00001e02ab150a625a7b595f053c2f51
+rating: 7.2
+---
+
+
+Emo/indie-rock band Cursive are back with their newest project  _Devourer_, a 13-track exploration through the consumption of art, life and relationships and the control this has on someone or something. It is a heavy topic and one that spans the entire length of the record with lyrics that keep within the theme. This is the band’s first album to be released for Run For Cover Records, with the last two having been self released.
+
+Opening with one of the singles “Botch Job” and within seconds the tone is set. It is heavy, it is loud and it is very reminiscent of 2000s emo-rock. There is an emphasis on the bass, and throughout the LP the listener will be reminded of it as it often leads the songs or shines especially on certain tracks. For ‘Botch Job’, the fast-paced nature of the verses breaks down into the chorus where the tone changes slightly, the pace slowing down and becoming ultimately more melodic as the guitars play ascending riffs that make it feel like the song (and the listener) will start to fly away.
+
+The lyrical narrative is again reinforced as lead singer and songwriter  [Tim Kasher](https://northerntransmissions.com/tim-kasher-shares-new-video-secret/)  closes the opening track with the line “This is not what I thought this life was going to look like” repeatedly. This sums up the entire concept of the record, the idea of disillusionment of life, the reality of it and the consequential cynicism that comes with one’s observation after that realisation.
+
+Speaking about the idea for the album, Kasher talked about consumption and “Imperialism”, saying how it comes in “many different forms. It’s not just political,” and it’s “the way we imperialise one another, even ourselves.” This leads to lyrics like: “Letting go of the notions I had as a boy” (Up And Away), “Played your best cards when you were young and insolent.” (Imposturing), “Best to adapt to the cul-de-sac.” (Dead End Days) and “What do we do now if someone could dismantle this kleptocracy?” (What Do We Do Now). These lines tackle political issues, the pull of nostalgia (which the band have said they rejected during the creative process of this LP) and also social issues like American Suburbia in the cul-de-sac line.
+
+There’s also a lot of observational songwriting, which appeared quickly as a highlight of the band for their nuanced take on the concept. On “Imposturing” specifically, the narrative is describing someone else and how they cause pain to channel into songs – “All the pain you’ve attained you’ve applied to a second verse.” This change to the second person, describing someone else while also allowing for there to be elements of a confessional tone and also a relatable tone, sticks out as some of the strongest writing on the album. The balance is a difficult one but once pulled off there is an added nuance to the writing, ultimately giving the record – and the cynical concept of the writing – further depth.
+
+There are some moments that threaten the quality of the album though. With the daunting topic chosen to write about, it can sometimes overwhelm the song. On “What The Fuck”, Kasher and the rest of the band manage to craft an instrumental sound that is layered and rich with different elements, often happening simultaneously, but lyrically the song is quite weak. “Yeah, yeah, I am such a lucky guy. Still, I’ll bitch and moan with insistence … Fuck my life.” Or in ‘Bloodbather’, where the use of the cello adds another dimension to the song the listener is ultimately pulled out of the experience by the jarring lyric: “Life’s an abscess or apple pie so shut those demons up and devour your slice.” It’s clear that since forming in 1995, and with a total of seven members in the band, they have matured and improved upon their sound but it is moments like that section of ‘What The Fuck’ where the creative process should’ve stopped and the song should’ve been ultimately cut in order to enrich the overall quality.
+
+Some of the greatest moments, especially from a purely instrumental perspective, are the songs that build atmosphere, with often a slower pace. The closer “The Loss” is a perfect example of this with the cello and dreamy guitar chords building atmosphere. There’s a pace change as the song builds and builds, narrative writing and also some interesting use of vocal processing that makes Kasher appear as if he’s singing through the phone. The introduction of wind instruments also helps to elevate the song to a whole new dimension. There’s also a fascinating use of two drum sets on “Rookie”, with drummers Pat Oakes and Clint Schnase combing their talents.
+
+“Dark Star”, which feels a lot more electronic than compared to the other tracks, is another standout. There’s a space theme, helped realised by the electronic effects, and the use of cello again is a superb addition which teams up with the hypnotising guitar line. The lyrics on ‘Consumer’ are some of the best written for the project, with the writing becoming more observational again. “I saw our future and I want to go back.” And “Happiness is devouring,” is the perfect summary of what the LP is about, combining writing about the personal with the social and the political – a tough task but pulled off it results in provoking and compelling lyricism.
+
+_Devourer_  is a record that sets out with a mountain of a task – to further push the sound of a band that’s been going for nearly 30 years, reject the pull of nostalgia and engage in the idea of imperialism in nearly all facets of life. At times it stumbles and produces some weaker songs that either rely too much on the sound of 2000s emo-rock or feature writing that should’ve been revised or scrapped, but there are also songs that do complete those goals and push the album, and Cursive, forward. While suffering from being too long, the highs of the newest release cannot be overlooked and help in ensuring that the listener isn’t fully lost. The band shines the most on atmospheric and immersive tracks and less directly personal lyrics. What it does guarantee is an experience that will make you think while providing thought-out, and often complex, concepts and sounds. Cursive have rejected the risk of being uninteresting and they prove that on this album.
+
+This review was originally uploaded on Northern Transmissions: [https://northerntransmissions.com/cursive-devourer/](https://northerntransmissions.com/cursive-devourer/)
+
