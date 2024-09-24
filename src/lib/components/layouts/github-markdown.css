@@ -177,7 +177,7 @@
 
 .markdown-body a {
 	background-color: transparent;
-	color: var(--fgColor-accent);
+	color: orange;
 	text-decoration: none;
 }
 

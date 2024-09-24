@@ -118,6 +118,7 @@
 		slides-per-view={posts.length}
 		centered-slides="true"
 		navigation={isDesktop ? 'true' : 'false'}
+		style="z-index: 1000"
 	>
 		{#each posts as post}
 			<!-- svelte-ignore a11y-click-events-have-key-events -->
