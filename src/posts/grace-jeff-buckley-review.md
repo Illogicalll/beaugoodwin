@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Grace By Jeff Buckley - Review
+title: Grace - Jeff Buckley
 description:
 date: '2023-10-20'
 categories:
   - Album
 img: 'https://i.scdn.co/image/ab67616d00001e026a760642a56847027428cb61'
+rating: 9.5
 ---
 
 When artists die their work, their life and their death become almost mythical and often help propel them to new levels of posthumous fame. This happened with Amy Winehouse, Kurt Cobain and Jeff Buckley. Buckley released only one studio album in his life, _Grace_, and a handful of live compilations were released after he died. His attempt at a second LP ‘Sketches for My Sweetheart the Drunk’ was released in May 1998, a year after he died.
@@ -23,4 +24,3 @@ The theme of love runs deep within the record. Written after a profound, tumultu
 The guitar on this album is truly fantastic as it stands out, unique, amidst the already breathtaking vocals and lyricism. Buckley’s use of guitar alone is praiseworthy, with fantastic chord shapes thought of with guitarist Michael Tighe on the track ‘So Real’. These abnormal chord shapes and progression underpin the emotion of the song. The subtle use of the telecaster in ‘Mojo Pin’, the first song on the record, helps create the ghostly and eerie atmosphere. Quickly followed by ‘Grace’, Buckley pushes the guitar to its limits as he sings along with a riff that maintains a faster, adrenaline-pumping rhythm.
 
 _Grace_ is a classic album and a breathtaking debut, with each song considered a masterpiece worthy of the highest praise. For a first release to be so sonically and emotionally rich as ‘Grace’ is unheard of and there is no doubt why it is as revered as it is. There is beauty in every moment, every aspect of every song, and there is no doubt about the potential Buckley could not reach. To listen is to be privy to the most intimate of moments and thoughts. As Jeff Buckley said: “Grace is what matters in anything…It sort of keeps you alive.”
-

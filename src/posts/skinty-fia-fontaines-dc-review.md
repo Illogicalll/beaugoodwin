@@ -1,11 +1,12 @@
 ---
 layout: default
-title: Skinty Fia by Fontaines D.C. - Review
+title: Skinty Fia - Fontaines D.C.
 description:
 date: '2023-10-18'
 categories:
   - Album
 img: 'https://upload.wikimedia.org/wikipedia/en/d/df/Fontaines_D.C._-_Skinty_Fia.png'
+rating: 8.9
 ---
 
 _Skinty Fia_ is Fontaines D.C.’s 3rd album and their most sonically ambitious. Combining the powerfully blunt yet still poet lyricism of their debut _Dogrel_ with the psychedelic and, at times, shoegaze-influenced guitars of _A Hero’s Death_; a significant departure from post-punk itself.
@@ -19,4 +20,3 @@ Other tracks like the eponymous single show the band’s interest in more electr
 Grian Chatten also delivers a solo piece with ‘The Couple Across The Way’. The use of the accordion, another unique instrument for the band, sets this song out amongst the others. An emotional break, this song is one of Grian’s finest lyricism and the slim down nature allows for the story to shine.
 
 _Skinty Fia_ is a commentary on what home/Ireland is to the band and how they feel and the experiences they face having moved out of Dublin and into London. It’s a social commentary (‘Roman Holiday, ‘In ár gCroíthe go deo’) and a love letter. ‘I Love You’, the penultimate track, is a flawed yet loving look back on Ireland and the state it is in now. While filled with adoration for the place they call home, they express their grievances with the faults it currently has and hope for improvement. A progression in sound and lyricism, _Skinty Fia_ is Fontaines at their best - both relatable and observant, familiar and unique; it is everything one could wish for in a Fontaines D.C. album.
-
