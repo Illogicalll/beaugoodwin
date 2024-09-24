@@ -11,7 +11,6 @@
 	import { hasRefreshed } from '$lib/stores.js';
 
 	export let data;
-	console.log(data);
 
 	let pageContent: HTMLDivElement;
 	let scoreElement: HTMLDivElement | null = null;
@@ -55,9 +54,8 @@
 
 	async function animateScore() {
 		const increment = 0.1;
-		let stepTime: number | null = null;
+		const stepTime = 15;
 		if (finalScore) {
-			stepTime = (1000 / Math.abs(finalScore - displayedScore)) * 0.08;
 			for (let i = displayedScore; i <= finalScore; i = parseFloat((i + increment).toFixed(1))) {
 				displayedScore = parseFloat(i.toFixed(1));
 				await delay(stepTime);

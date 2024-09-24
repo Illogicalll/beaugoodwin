@@ -67,11 +67,7 @@
 
 	async function animateScore() {
 		const increment = 0.1;
-		let stepTime: number;
-		if (rating) {
-			stepTime = (1000 / Math.abs(rating - displayedScore)) * 0.06;
-		}
-
+		const stepTime = 15;
 		if (rating && rating > displayedScore) {
 			for (let i = displayedScore; i <= rating; i = parseFloat((i + increment).toFixed(1))) {
 				displayedScore = parseFloat(i.toFixed(1));
