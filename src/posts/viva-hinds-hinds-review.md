@@ -2,7 +2,7 @@
 layout: default
 title: Viva Hinds - Hinds
 description:
-date: '2024-06-07'
+date: '2024-09-02'
 categories:
   - Album
 img: https://vinilo.co.uk/cdn/shop/files/Hinds-Viva-Hinds_300x300.jpg?v=1715182443
