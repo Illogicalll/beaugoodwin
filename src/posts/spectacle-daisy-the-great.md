@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Spectacle: Daisy The Great vs. Tony Visconti - Daisy The Great
 description:
@@ -9,8 +8,6 @@ categories:
 img: https://northerntransmissions.com/wp-content/uploads/2024/09/DTG-Spectacle-COVER-art-300x300.jpg
 rating: 9.5
 ---
-
-
 
 Daisy the Great’s newest EP *Spectacle: Daisy the Great vs. Tony Visconti* is their best work yet. Working with legendary producer Tony Visconti ([David Bowie](https://northerntransmissions.com/blackstar-by-david-bowie/), T. Rex) is certain to produce amazing music but DtG, a collaboration between Kelley Dugan and Mina Walker, manage to ensure that the five tracks have their own unique, special twist.
 
