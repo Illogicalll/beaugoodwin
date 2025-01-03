@@ -6,7 +6,7 @@ description:
 date: '2024-11-08'
 categories:
   - Album
-img: 'https://www.mixeduprecords.com/cdn/shop/files/PrimalScream_ComeAhead_300x300.jpg?v=1721299081'
+img: '[https://www.mixeduprecords.com/cdn/shop/files/PrimalScream_ComeAhead_300x300.jpg?v=1721299081](https://i.scdn.co/image/ab67616d00001e0287636c7ca99a61479b8281ed)'
 rating: 7.5
 ---
 
