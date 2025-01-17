@@ -81,6 +81,36 @@
     }
   };
 
+	const trackCenterAlbumMobile = () => {
+		setTimeout(() => {
+		const cardsContainer = document.querySelector('.cards-mobile');
+
+    if (cardsContainer) {
+      const cards = document.querySelectorAll('.cards-mobile li');
+
+      const updateCenterAlbum = () => {
+        const containerCenter = cardsContainer.scrollLeft + cardsContainer.clientWidth / 2;
+        let closestIndex = 0;
+        let closestDistance = Number.MAX_VALUE;
+        cards.forEach((card: any, index) => {
+          const cardCenter = card.offsetLeft + card.clientWidth / 2;
+          const distance = Math.abs(containerCenter - cardCenter);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+        activeIndex = closestIndex;
+        rating = posts[activeIndex]?.rating || 0;
+        animateScore();
+      };
+
+      cardsContainer?.addEventListener('scroll', updateCenterAlbum);
+      updateCenterAlbum();
+    }
+	})
+  };
+
   const moveToNext = () => {
   const cardsContainer = document.querySelector('.cards');
   if (cardsContainer) {
@@ -103,16 +133,15 @@ const moveToPrevious = () => {
   }
 };
 
-const handleTouchStart = () => {
-	window.location.reload();
-}
-
   onMount(() => {
     handleResize();
     window.addEventListener('resize', handleResize);
     ensureCSS();
 		if (isDesktop) {
 			trackCenterAlbum();
+		} else
+		{
+			trackCenterAlbumMobile();
 		}
 
     return () => {
@@ -126,6 +155,7 @@ const handleTouchStart = () => {
       hasRefreshed.set(true);
     }
   }
+
 </script>
 
 <div class="absolute top-4 left-4 z-50">
@@ -157,12 +187,12 @@ const handleTouchStart = () => {
   {/if}
 
 	{#if !isDesktop}
-	<!-- <div class="text-center">
+	<div class="text-center">
     <h1 class="font-bold" style="font-size: 20px">
       {posts[activeIndex].title.split('-')[0].trim()}
     </h1>
     <p class="mb-8">{posts[activeIndex].title.split('-')[1].trimStart()}</p>
-  </div> -->
+  </div>
 			<ul class="cards-mobile">
 				{#each posts as post}
 					<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
@@ -172,9 +202,9 @@ const handleTouchStart = () => {
 					</li>
 				{/each}
 			</ul>
-				<!-- <div style="color: {getScoreColor(displayedScore)}; font-size: 40px; font-weight: bold; margin-top: 10px;">
+				<div style="color: {getScoreColor(displayedScore)}; font-size: 40px; font-weight: bold; margin-top: 10px;">
 					{displayedScore.toFixed(1)}
-				</div> -->
+				</div>
 	{/if}
 
   {#if isDesktop}
@@ -241,7 +271,7 @@ const handleTouchStart = () => {
     display: inline-block;
     width: 150px;
     height: 150px;
-    transform: translateY(-80px);
+    transform: translateY(20px);
   }
 
   .score-text {
@@ -265,6 +295,7 @@ const handleTouchStart = () => {
     --cover-size: 300px;
     list-style-image: initial;
     min-height: calc(var(--cover-size));
+		height: 650px;
     width: calc(var(--cover-size) * var(--size));
     margin: 0 auto;
     padding: calc(var(--cover-size) / 3 * 2) 0;
@@ -276,6 +307,28 @@ const handleTouchStart = () => {
     box-sizing: border-box;
     scroll-snap-type: x mandatory;
   }
+
+	::-webkit-scrollbar {
+    display: none;
+	}
+
+	.cards:hover::-webkit-scrollbar:horizontal {
+    display: block;
+		width: 8px;
+		height: 8px;
+	}
+	.cards:hover::-webkit-scrollbar-thumb {
+			background-color: #888;
+			border-radius: 4px;
+	}
+
+	.cards:hover::-webkit-scrollbar-track {
+			background-color: rgba(0,0,0,0);
+	}
+
+	.cards:hover::-webkit-scrollbar-thumb:hover {
+			background-color: #555;
+	}
 
   .cards li {
     view-timeline-name: --li-in-and-out-of-view;
@@ -295,6 +348,10 @@ const handleTouchStart = () => {
 
   .cards li:first-of-type {
     margin-left: calc(70% - (var(--cover-size)));
+  }
+
+	.cards li:last-of-type {
+    margin-right: calc(70% - (var(--cover-size)));
   }
 
   .cards li > img {
@@ -330,6 +387,10 @@ const handleTouchStart = () => {
 
   .cards-mobile li:first-of-type {
     margin-left: 50%;
+  }
+
+	.cards-mobile li:last-of-type {
+    margin-right: 50%;
   }
 
   .cards-mobile li > img {
