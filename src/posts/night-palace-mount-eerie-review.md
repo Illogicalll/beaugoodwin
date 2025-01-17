@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Night Palace- Mount Eerie
 description:

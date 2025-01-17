@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Jonah Yano & The Heavy Loop - Jonah Yano
 description:
