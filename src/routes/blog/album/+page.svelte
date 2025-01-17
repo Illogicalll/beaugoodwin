@@ -179,7 +179,7 @@ const moveToPrevious = () => {
 <div class="flex justify-center items-center h-svh w-svw flex-col">
   {#if isDesktop}
   <div class="text-center" style="transform: translateY(80px)">
-    <h1 class="font-bold" style="font-size: 40px">
+    <h1 class="font-bold" style="font-size: 40px;">
       {posts[activeIndex].title.split('-')[0].trim()}
     </h1>
     <p class="mb-8">{posts[activeIndex].title.split('-')[1].trimStart()}</p>
@@ -191,7 +191,7 @@ const moveToPrevious = () => {
     <h1 class="font-bold" style="font-size: 20px">
       {posts[activeIndex].title.split('-')[0].trim()}
     </h1>
-    <p class="mb-8">{posts[activeIndex].title.split('-')[1].trimStart()}</p>
+    <p class="mb-8 artists">{posts[activeIndex].title.split('-')[1].trimStart()}</p>
   </div>
 			<ul class="cards-mobile">
 				{#each posts as post}
@@ -266,6 +266,13 @@ const moveToPrevious = () => {
 </div>
 
 <style>
+
+  .artists {
+    max-width: 90vw;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+  }
   .ring-container {
     position: relative;
     display: inline-block;
