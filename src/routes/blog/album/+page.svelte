@@ -310,6 +310,7 @@ const moveToPrevious = () => {
     max-width: 90vw;
     list-style: none;
     overflow-x: scroll;
+    overflow-y: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     scroll-snap-type: x mandatory;
