@@ -1,7 +1,7 @@
 ﻿
 ---
 layout: default
-title: Clairo live at Hammersmith Eventim Apollo
+title: Clairo Live at Hammersmith Eventim Apollo
 description:
 date: '2025-03-13'
 categories:
