@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Clairo Live at Hammersmith Eventim Apollo
 description:
@@ -9,9 +8,6 @@ categories:
 lat: 51.49107951391756
 long: -0.22419177853731276
 ---
-
-  
-
 
 For two nights, Clairo’s Charm tour takes over The Hammersmith Eventim Apollo in London, where she performs tracks from all of her released projects thus far. Across 21 songs, the crowd are treated to fan-favourites as well as deep cuts from her first EP and side-project.
 

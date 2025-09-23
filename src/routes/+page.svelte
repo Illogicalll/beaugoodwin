@@ -39,10 +39,7 @@
 		if (typeof window !== 'undefined') {
 			Bowser.getParser(window.navigator.userAgent).getResult().platform.type === 'mobile'
 				? (isDesktop = false)
-				: toast.info('Move the cursor down here to navigate!', {
-						duration: 1700,
-						style: 'position: fixed; width: auto; transform: translateX(5%);'
-					});
+				: null;
 			new Typed('#hero', { strings: ['^300Beau ^20 Goodwin'], typeSpeed: 50 });
 			await delay(1000);
 			buttonRow.classList.remove('opacity-0');
@@ -362,4 +359,5 @@
 	.para {
 		font-size: 12px;
 	}
+
 </style>

@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Everybody Needs A Hero - Orla Gartland
 description:
@@ -9,8 +8,6 @@ categories:
 img: 'https://diy-magazine.s3.eu-west-1.amazonaws.com/d/diy/Artists/O/Orla-Gartland/_300x300_crop_center-center_60_line/Orla-Gartland-ENAH-art-copy.jpg'
 rating: 8.3
 ---
-
-
 
 Everybody Needs A Hero is Orla’s Gartland’s newest release – a 12-track exploration into long-term love that showcases Orla’s progression as both a musician and a songwriter.
 

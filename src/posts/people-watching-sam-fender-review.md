@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: People Watching - Sam Fender
 description:
@@ -9,11 +8,6 @@ categories:
 img: 'https://i.scdn.co/image/ab67616d00001e02236df2fbddaf61fe0926284f'
 rating: 9.4
 ---
-
-
-
-
-
 
 **Sam Fender’s newest release People Watching sees the British musician soar to new heights. Ever since the release of his debut  [Hypersonic Missiles](https://northerntransmissions.com/sam-fender-shares-details-of-hypersonic-missiles/), Fender has been highlighted as one of the greatest talents to come out of the UK in the last decade. With Seventeen Going Under, he saw himself reach superstar levels in the country with the eponymous song going viral on TikTok. With prime slots at Glastonbury and Reading & Leeds and a sold-out arena tour, People Watching was highly anticipated but the pressure didn’t affect Fender, ultimately releasing a more ambitious, improved album filled with catchy and energetic songs.**
 

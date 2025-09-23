@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Who Let The Dogs Out - Lambrini Girls
 description:
@@ -9,13 +8,6 @@ categories:
 img: 'https://vinilo.co.uk/cdn/shop/files/Lambrini-Girls-Who-Let-The-Dogs-Out_300x300.jpg?v=1729092880'
 rating: 7.8
 ---
-
-
-
-
-
-
-
 
 **Lambrini Girls, the Brighton-based punk duo consisting of Phoebe Lunny and Lilly Macieira, deliver a debut album filled with whirlwind guitars and lyrics that highlight the injustices and power imbalances of modern-day society.**
 

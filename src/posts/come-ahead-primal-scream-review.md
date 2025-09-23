@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Come Ahead - Primal Scream
 description:
@@ -9,10 +8,6 @@ categories:
 img: 'https://www.mixeduprecords.com/cdn/shop/files/PrimalScream_ComeAhead_300x300.jpg?v=1721299081'
 rating: 5.9
 ---
-
-
-
-
 
 Primal Scream’s first album since 2016 Come Ahead is an ambitious but ultimately unsatisfying project. The band’s 12th record features some of frontman  [Bobby Gillespie](https://northerntransmissions.com/bobby-gillespie-jehnny-beth-utopian-ashes/)’s most personal and introspective songwriting yet and according to him, it was the first time the lyrics came before the music.
 

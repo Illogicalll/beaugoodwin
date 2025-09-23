@@ -9,8 +9,6 @@ img: https://i.scdn.co/image/ab67616d00001e0217fed6a2714c222ee31838f5
 rating: 7.6
 ---
 
-
-
 On August 30th, Duster surprised dropped their fifth album _In Dreams._ It builds upon their atmospheric and space-rock sound that they have become so well known for. The recognisable sound became even more popular when the band blew up online, with Duster receiving unprecedented amounts of streams of _Stratosphere_ which came out in 1998, with ‘Inside Out’ receiving 12.7 billion streams. At nearly 5 million monthly listeners, _In Dreams_ comes as the band’s first new release in two years.
 
   

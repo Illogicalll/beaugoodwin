@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Devourer - Cursive
 description:
@@ -9,7 +8,6 @@ categories:
 img: https://i.scdn.co/image/ab67616d00001e02ab150a625a7b595f053c2f51
 rating: 7.2
 ---
-
 
 Emo/indie-rock band Cursive are back with their newest project  _Devourer_, a 13-track exploration through the consumption of art, life and relationships and the control this has on someone or something. It is a heavy topic and one that spans the entire length of the record with lyrics that keep within the theme. This is the band’s first album to be released for Run For Cover Records, with the last two having been self released.
 

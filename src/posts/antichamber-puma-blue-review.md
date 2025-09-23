@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: antichamber - Puma Blue
 description:
@@ -9,10 +8,6 @@ categories:
 img: 'https://i.scdn.co/image/ab67616d00001e021d3fee4d942243a4d331c654'
 rating: 7.7
 ---
-
-
-
-
 
 **Puma Blue’s surprise album  _antichamber_  is a beautiful and intimate insight into loneliness; specifically, as Puma Blue (real name Jacob Allen) puts it, ‘aching winter loneliness.’ After picking up a nylon-stringed acoustic guitar while alone in his apartment, Allen started to write extremely personal songs that were akin to journal entries.**
 

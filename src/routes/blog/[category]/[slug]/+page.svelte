@@ -31,17 +31,9 @@
 		window.location.href = '../../' + data.url.split('/')[2];
 	}
 
-	function copyToClipboard() {
-		const currentUrl = window.location.href;
-		navigator.clipboard
-			.writeText(currentUrl)
-			.then(() => {})
-			.catch((err) => {
-				console.error('Failed to copy: ', err);
-			});
-	}
-
 	let isDesktop = false;
+	let shareClicked = false;
+
 	const handleResize = () => {
 		isDesktop = window.innerWidth > 1100;
 	};
@@ -78,6 +70,31 @@
 			window.removeEventListener('resize', handleResize);
 		};
 	});
+
+	async function copyToClipboard() {
+		const currentUrl = window.location.href;
+		try {
+			if (navigator.clipboard && navigator.clipboard.writeText) {
+				await navigator.clipboard.writeText(currentUrl);
+			} else {
+				const textArea = document.createElement('textarea');
+				textArea.value = currentUrl;
+				textArea.style.position = 'fixed';
+				textArea.style.opacity = '0';
+				document.body.appendChild(textArea);
+				textArea.focus();
+				textArea.select();
+				document.execCommand('copy');
+				document.body.removeChild(textArea);
+			}
+			shareClicked = true;
+			setTimeout(() => {
+				shareClicked = false;
+			}, 1000);
+		} catch (err) {
+			console.error('Failed to copy: ', err);
+		}
+	}
 </script>
 
 <div class="opacity-0" style="transition: opacity 0.7s ease" bind:this={pageContent}>
@@ -132,38 +149,46 @@
 			<svelte:component this={data.content} />
 		</div>
 	</div>
-	<div class="fixed bottom-6 left-4">
-		<Tooltip.Root openDelay={50}>
-			<Tooltip.Trigger>
-				<Button
-					on:click={goBack}
-					variant="outline"
-					size="icon"
-					style="background-color:  {$darkMode ? '' : 'rgba(175, 173, 173, 0.2);'}"
-				>
-					<iconify-icon icon="lets-icons:back"></iconify-icon>
-				</Button>
-			</Tooltip.Trigger>
-			<Tooltip.Content side="right">back</Tooltip.Content>
-		</Tooltip.Root>
-	</div>
+	{#if isDesktop}
+		<div class="fixed bottom-6 left-4">
+			<Tooltip.Root openDelay={50}>
+				<Tooltip.Trigger>
+					<Button
+						on:click={goBack}
+						variant="outline"
+						size="icon"
+						style="background-color:  {$darkMode ? '' : 'rgba(175, 173, 173, 0.2);'}"
+					>
+						<iconify-icon icon="lets-icons:back"></iconify-icon>
+					</Button>
+				</Tooltip.Trigger>
+				<Tooltip.Content side="right">back</Tooltip.Content>
+			</Tooltip.Root>
+		</div>
+	{/if}
 	<div class="fixed bottom-6 left-0 right-0 flex justify-center">
 		<PageToggle />
 	</div>
-	<div class="fixed bottom-6 right-4">
-		<Tooltip.Root openDelay={50}>
-			<Tooltip.Trigger>
-				<Button
-					on:click={copyToClipboard}
-					style="background-color:  {$darkMode ? '' : 'rgba(175, 173, 173, 0.2);'}"
-					variant="outline"
-					size="icon"
-				>
-					<iconify-icon icon="material-symbols:share"></iconify-icon>
-				</Button>
-			</Tooltip.Trigger>
-			<Tooltip.Content side="left">share this post</Tooltip.Content>
-		</Tooltip.Root>
-	</div>
+	{#if isDesktop}
+		<div class="fixed bottom-6 right-4">
+			<Tooltip.Root openDelay={50}>
+				<Tooltip.Trigger>
+					<Button
+						on:click={copyToClipboard}
+						style="background-color: {shareClicked ? '#24C24B' : $darkMode ? '' : 'rgba(175, 173, 173, 0.2);'}; transition: background-color 0.3s ease;"
+						variant="outline"
+						size="icon"
+					>
+						{#if shareClicked}
+							<iconify-icon icon="material-symbols:check" style="transition: all 0.3s ease;"></iconify-icon>
+						{:else}
+							<iconify-icon icon="material-symbols:share" style="transition: all 0.3s ease;"></iconify-icon>
+						{/if}
+					</Button>
+				</Tooltip.Trigger>
+				<Tooltip.Content side="left">{shareClicked ? 'copied!' : 'share this post'}</Tooltip.Content>
+			</Tooltip.Root>
+		</div>
+	{/if}
 </div>
 

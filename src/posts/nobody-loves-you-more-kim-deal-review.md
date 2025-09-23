@@ -9,12 +9,6 @@ img: 'https://diy-magazine.s3.eu-west-1.amazonaws.com/d/diy/Artists/K/Kim-Deal/_
 rating: 8.8
 ---
 
-
-
-
-
-
-
 Kim Deal is a prolific artist having influenced musicians like Kurt Cobain and Olivia Rodrigo and been linked to bands such as  [Pixies](https://northerntransmissions.com/pixies-debut-new-single-motoroller/)  and The Breeders. For such an iconic artist, it is surprising that Nobody Loves You More is the first solo album Kim has done. With writing having started in 2011 and revisited intermittently, the project features work that is both quintessential to the sound of her other projects whilst also being innovative.
 
 It’s clear from the start that this album was going to be individual and unique compared to the rest of her discography. Opening with the title track, the violins and the stripped-back use of the drums create a vulnerable and emotive atmosphere. There’s focus on her singing, a distinct standout aspect of the entire project for how much emotion and character she can portray with her voice, and as the brass instruments come in nearer the end to cause a cascade of sound, her writing becomes even more heartfelt.

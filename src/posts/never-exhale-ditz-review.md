@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Never Exhale - Ditz
 description:
@@ -9,14 +8,6 @@ categories:
 img: 'https://diy-magazine.s3.eu-west-1.amazonaws.com/d/diy/Artists/D/DITZ/_300x300_crop_center-center_60_line/Never-Exhale-artwork.jpg'
 rating: 7.3
 ---
-
-
-
-
-
-
-
-
 
 **Ditz’s newest record  _Never Exhale_  comes laden with mystery and a tense atmosphere. The ten tracks that populate the album are angry and loud with Cal Francis’ vocals perfectly accommodate the industrial post-punk feel.**
 

@@ -9,11 +9,6 @@ img: 'https://i.scdn.co/image/ab67616d00001e0287636c7ca99a61479b8281ed'
 rating: 7.5
 ---
 
-
-
-
-
-
 **Mount Eerie, real name being  [Phil Elverum](https://northerntransmissions.com/mount-eerie-releases-non-metaphorical-decolonization/), had taken a 5-year gap after the release of Lost Wisdom, Pt 2 and with any long time gap, there comes serious introspection and reevaluation of oneself and artistry and the 26-track epic Night Palace is no exception. There’s a lot to process and take in with the album. The runtime, just under 90 minutes, is intimidating and requires the listener to commit to the album fully in order to truly appreciate it.**
 
 The record is expansive and is a perfect showcase of how to build atmosphere. Elverum uses space in his songs to help build a world and immerse the listeners in the album. The production is key for this, with some songs having sound effects or deviating from the usual tone of the overall LP (like the sound of waves in ‘I Heard Whales (I Think)’ or the electronic aspect of ‘I Spoke With A Fish’). This all adds complexity to the tracks, making them feel more alive and powerful.

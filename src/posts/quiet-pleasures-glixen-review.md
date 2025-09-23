@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Quiet Pleasures - Glixen
 description:
@@ -9,12 +8,6 @@ categories:
 img: 'https://i.scdn.co/image/ab67616d00001e02237af0abc6154f6c46c0a32a'
 rating: 7.5
 ---
-
-
-
-
-
-
 
 **Quiet Pleasures, the new EP from Phoenix-based rockers Glixen, delivers a haunting and intense experience through five tracks; as lead vocalist Aislinn Ritchie describes it, the EP explores “change, desire, devotion, sensuality and lovingness**.
 

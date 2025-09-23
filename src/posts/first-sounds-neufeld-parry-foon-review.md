@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: First Sounds -Sarah Neufeld / Richard Reed Parry / Rebecca Foon
 description:
@@ -9,9 +8,6 @@ categories:
 img: 'https://assets.olirecords.com/2024/07/FirstSounds-FrontCover-copy-1-300x300.jpeg'
 rating: 7.9
 ---
-
-
-
 
 First Sounds is the newest neoclassical from Montreal artists Sarah Neufeld, Richard Reed Parry and Rebecca Foon; playing violin, multiple instruments and cello respectively. Their past work is impressive, with Sarah and Richard being members of Arcade Fire and Rebecca from Set Fire to Flames, and at a glance there is the threat of their past work overshadowing this record. However, this project is totally unique and singular. It exists because of the collaboration between the three, uninformed by prior work.
 

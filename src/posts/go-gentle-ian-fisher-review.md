@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Go Gentle - Ian Fisher
 description:
@@ -9,8 +8,6 @@ categories:
 img: 'https://i.scdn.co/image/ab67616d00001e021fa8ab12d85347cba4602eef'
 rating: 7.7
 ---
-
-
 
 **Ian Fisher’s newest album Go Gentle is a hauntingly emotional and deeply thought-provoking exploration of the process and aftermath of loss and grief. This is an extremely personal topic for Ian, with the album being heavily influenced by the loss of his mother who passed away after fighting cancer for 26 years.**
 

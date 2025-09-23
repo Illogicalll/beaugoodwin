@@ -25,7 +25,7 @@
 				Bowser.getParser(window.navigator.userAgent).getResult().platform.type === 'mobile'
 					? true
 					: false;
-			isBottomQuarter = isMobile ? true : false;
+			isBottomQuarter = isMobile ? true : true;
 		}
 		window.addEventListener('mousemove', checkBottomQuarter);
 		const unsubscribe = darkMode.subscribe((value) => {
@@ -40,10 +40,7 @@
 
 	function checkBottomQuarter(event: MouseEvent) {
 		if (!isMobile) {
-			const windowHeight = window.innerHeight;
-			const bottomQuarter = windowHeight * 0.75;
-
-			isBottomQuarter = event.clientY >= bottomQuarter;
+			isBottomQuarter = true;
 		}
 	}
 </script>
@@ -51,10 +48,10 @@
 	<div
 		class="toggle-bar z-50"
 		style="position: fixed; bottom: {isBottomQuarter
-			? '3%'
+			? isMobile ? '0.5rem' : '1.5rem'
 			: '-400px'}; background-color: {backgroundColor}; border-radius: 9px; padding: 5px; opacity: {isBottomQuarter
 			? '1'
-			: '0.4'};  transition: bottom 0.4s ease, opacity 0.1s ease, background-color 0.3s ease;"
+			: '0.4'};  transition: opacity 0.1s ease, background-color 0.3s ease;"
 	>
 		<ToggleGroup.Root size="lg" type="single" onValueChange={handlePageChange}>
 			<Tooltip.Root openDelay={50}>

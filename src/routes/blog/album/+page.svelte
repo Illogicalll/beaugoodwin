@@ -63,9 +63,22 @@
         const containerCenter = cardsContainer.scrollLeft + cardsContainer.clientWidth / 2;
         let closestIndex = 0;
         let closestDistance = Number.MAX_VALUE;
+        
         cards.forEach((card: any, index) => {
           const cardCenter = card.offsetLeft + card.clientWidth / 2;
           const distance = Math.abs(containerCenter - cardCenter);
+          
+          const distanceFromCenter = (cardCenter - containerCenter) / (cardsContainer.clientWidth * 0.3);
+          const rotateY = Math.max(-60, Math.min(60, -distanceFromCenter * 30));
+          const translateZ = Math.max(0, 1 - Math.abs(distanceFromCenter)) * 0.5;
+          const scale = 1 + (Math.max(0, 1 - Math.abs(distanceFromCenter)) * 0.3);
+          const translateX = distanceFromCenter * 20;
+          
+          const img = card.querySelector('img');
+          if (img) {
+            img.style.transform = `translateX(${translateX}px) rotateY(${rotateY}deg) translateZ(${translateZ}em) scale(${scale})`;
+          }
+          
           if (distance < closestDistance) {
             closestDistance = distance;
             closestIndex = index;
@@ -299,7 +312,7 @@ const moveToPrevious = () => {
 
 	.cards {
     --size: 6;
-    --cover-size: 300px;
+    --cover-size: 280px;
     list-style-image: initial;
     min-height: calc(var(--cover-size));
 		height: 650px;
@@ -339,34 +352,29 @@ const moveToPrevious = () => {
 	}
 
   .cards li {
-    view-timeline-name: --li-in-and-out-of-view;
-    view-timeline-axis: inline;
-    animation: linear adjust-z-index both;
-    animation-timeline: --li-in-and-out-of-view;
     perspective: 40em;
     position: relative;
     z-index: 1;
-    will-change: z-index;
     user-select: none;
     display: inline-block;
     width: var(--cover-size);
     height: var(--cover-size);
     scroll-snap-align: center;
+    margin: 0 40px;
   }
 
   .cards li:first-of-type {
-    margin-left: calc(70% - (var(--cover-size)));
+    margin-left: calc(50% - (var(--cover-size) / 2));
   }
 
 	.cards li:last-of-type {
-    margin-right: calc(70% - (var(--cover-size)));
+    margin-right: calc(50% - (var(--cover-size) / 2));
   }
 
   .cards li > img {
-    animation: linear rotate-cover both;
-    animation-timeline: --li-in-and-out-of-view;
     cursor: pointer;
     will-change: transform;
+    transition: transform 0.1s ease-out;
   }
 
 	.cards-mobile {
@@ -419,18 +427,6 @@ const moveToPrevious = () => {
     cursor: not-allowed;
   }
 
-  @keyframes adjust-z-index {
-    0% {
-      z-index: 1;
-    }
-    50% {
-      z-index: 100;
-    }
-    100% {
-      z-index: 1;
-    }
-  }
-	
   @keyframes rotate-cover {
     0% {
       transform: translateX(-100%) rotateY(-45deg);

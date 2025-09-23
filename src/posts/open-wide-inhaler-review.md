@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Open Wide - Inhaler
 description:
@@ -9,9 +8,6 @@ categories:
 img: 'https://i.scdn.co/image/ab67616d00001e02698ee94f949838f501d17da4'
 rating: 9.2
 ---
-
-
-
 
 With Inhaler’s third album Open Wide, the Irish band steers further into the indie-pop sound that had been bubbling beneath the surface of their previous two records. They embrace it now with jaunty guitars and infectious bass lines that make each song feel playful.
 
