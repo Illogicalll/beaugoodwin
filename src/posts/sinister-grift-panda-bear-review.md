@@ -1,5 +1,4 @@
-﻿
----
+﻿---
 layout: default
 title: Sinister Grift - Panda Bear
 description:
