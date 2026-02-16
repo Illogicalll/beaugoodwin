@@ -1,7 +1,7 @@
 ﻿
 layout: default title: Baths - Gut description: date: '2025-02-19' categories:
 
--   Album img: 'https://i.scdn.co/image/ab67616d00001e02fff17a7ae7a0adffb287637f (https://i.scdn.co/image/ab67616d00001e02237af0abc6154f6c46c0a32a)' rating: 7.7
+-   Album img: 'https://i.scdn.co/image/ab67616d00001e02fff17a7ae7a0adffb287637f(https://i.scdn.co/image/ab67616d00001e02237af0abc6154f6c46c0a32a)' rating: 7.7
 
 ----------
 
