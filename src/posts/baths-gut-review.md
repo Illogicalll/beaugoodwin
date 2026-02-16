@@ -1,10 +1,13 @@
-﻿
-layout: default title: Baths - Gut description: date: '2025-02-19' categories:
-
--   Album img: 'https://i.scdn.co/image/ab67616d00001e02fff17a7ae7a0adffb287637f(https://i.scdn.co/image/ab67616d00001e02237af0abc6154f6c46c0a32a)' rating: 7.7
-
-----------
-
+---﻿
+layout: default 
+title: Baths - Gut 
+description: 
+date: '2025-02-19' 
+categories:
+  -   Album
+img: 'https://i.scdn.co/image/ab67616d00001e02fff17a7ae7a0adffb287637f'
+rating: 7.7
+---
 
 **Gut, the hotly anticipated album from Baths, delivers on its title promise. Written from the stomach instead of the heart, Baths – real name  [Will Wiesenfeld](https://northerntransmissions.com/pendant-to-release-caustic-pop-remixes/)  – wanted to bare himself fully and write about his honest, unfiltered thoughts. In doing so, we encounter repeated themes of sex, relationships and yearning.**
 
