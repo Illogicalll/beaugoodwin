@@ -1,0 +1,22 @@
+{
+  "name": "beaugoodwin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun dev-server.ts",
+    "build": "./node_modules/.bin/tailwindcss -i ./src/index.css -o ./dist/styles.css && bun build ./src/main.tsx --outdir ./dist --target browser --minify --naming bundle.js && cp index.html dist/",
+    "preview": "cd dist && bunx serve ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.5.3"
+  }
+}
