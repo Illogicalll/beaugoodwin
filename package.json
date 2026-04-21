@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "bun dev-server.ts",
-    "build": "./node_modules/.bin/tailwindcss -i ./src/index.css -o ./dist/styles.css && bun build ./src/main.tsx --outdir ./dist --target browser --minify --naming bundle.js && cp index.html dist/",
+    "build": "./node_modules/.bin/tailwindcss -i ./src/index.css -o ./dist/styles.css && bun build ./src/main.tsx --outfile ./dist/bundle.js --target browser --minify && cp index.html dist/",
     "preview": "cd dist && bunx serve ."
   },
   "dependencies": {
