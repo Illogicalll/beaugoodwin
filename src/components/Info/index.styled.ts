@@ -26,7 +26,13 @@ export const Name = styled(Link)({
   textDecoration: "none",
   fontFamily: "inherit",
   lineHeight: 0.9,
-  "&:hover": {
+  "@media (hover: hover)": {
+    "&:hover": {
+      backgroundColor: "#000",
+      color: "#fff",
+    },
+  },
+  "&:active": {
     backgroundColor: "#000",
     color: "#fff",
   },
@@ -53,7 +59,13 @@ export const Clickable = styled(Link)({
   fontFamily: "inherit",
   lineHeight: 0.9,
   marginBottom: "4px",
-  "&:hover": {
+  "@media (hover: hover)": {
+    "&:hover": {
+      backgroundColor: "#000",
+      color: "#fff",
+    },
+  },
+  "&:active": {
     backgroundColor: "#000",
     color: "#fff",
   },

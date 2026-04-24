@@ -6,7 +6,13 @@ export const Container = styled(Link)({
   display: "inline-block",
   color: "inherit",
   textDecoration: "none",
-  "&:hover": {
+  "@media (hover: hover)": {
+    "&:hover": {
+      backgroundColor: "#000",
+      color: "#fff",
+    },
+  },
+  "&:active": {
     backgroundColor: "#000",
     color: "#fff",
   },
