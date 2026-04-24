@@ -29,4 +29,6 @@ export const Sidebar = styled(Box)(({ theme }) => ({
 
 export const Page = styled(Box)({
   flex: 1,
+  display: "flex",
+  flexDirection: "column",
 });

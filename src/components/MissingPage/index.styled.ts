@@ -6,7 +6,7 @@ export const Container = styled("div")({
   flexDirection: "column",
   alignItems: "center",
   justifyContent: "center",
-  height: "100vh",
+  flex: 1,
 });
 
 export const Title = styled(Typography)({
