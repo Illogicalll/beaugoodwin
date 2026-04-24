@@ -22,6 +22,8 @@ export const Sidebar = styled(Box)(({ theme }) => ({
     height: "auto",
     width: "100%",
     flexDirection: "column",
+    zIndex: theme.zIndex.appBar,
+    backgroundColor: "#fff",
   },
 }));
 
