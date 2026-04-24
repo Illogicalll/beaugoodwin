@@ -1,0 +1,274 @@
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fff; color: #000; font-family: Georgia, serif; }
+
+  .page-title {
+    font-size: 13px; letter-spacing: 0.15em; text-transform: uppercase;
+    font-family: -apple-system, sans-serif; font-weight: 400; color: #666; margin-bottom: 6px;
+  }
+  h2 { font-size: 28px; font-weight: 700; margin-bottom: 8px; line-height: 1.1; }
+  .subtitle { font-size: 14px; color: #555; font-family: -apple-system, sans-serif; margin-bottom: 40px; }
+
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 32px; }
+
+  .card {
+    border: 1.5px solid #e0e0e0; cursor: pointer; transition: border-color 0.15s;
+    background: #fff; border-radius: 2px; overflow: hidden;
+  }
+  .card:hover { border-color: #000; }
+  .card.selected { border-color: #000; border-width: 2.5px; }
+  .card.selected .card-letter { background: #000; color: #fff; }
+  .card-preview { height: 210px; border-bottom: 1px solid #e0e0e0; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+  .card-meta { padding: 16px 18px; }
+  .card-meta h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .card-meta p { font-size: 12px; color: #666; font-family: -apple-system, sans-serif; line-height: 1.5; }
+  .card-letter {
+    display: inline-block; width: 22px; height: 22px; border: 1.5px solid #000;
+    font-size: 11px; font-family: -apple-system, sans-serif; font-weight: 700;
+    text-align: center; line-height: 19px; margin-bottom: 8px; border-radius: 1px;
+  }
+
+  /* ---- I: Exposed Grid ---- */
+  .preview-i {
+    background: #fafafa;
+    position: relative;
+    padding: 0;
+  }
+  .grid-col {
+    position: absolute;
+    top: 0; bottom: 0;
+    border-left: 1px solid rgba(0,0,0,0.06);
+  }
+  .gc1 { left: 25%; }
+  .gc2 { left: 50%; }
+  .gc3 { left: 75%; }
+  .grid-baseline {
+    position: absolute;
+    left: 0; right: 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+  .gb1 { top: 33%; }
+  .gb2 { top: 66%; }
+  .grid-content {
+    position: relative; z-index: 1;
+    padding: 20px 20px 20px 20px;
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column; justify-content: space-between;
+  }
+  .grid-label {
+    font-size: 8px; letter-spacing: 0.2em; text-transform: uppercase;
+    font-family: -apple-system, sans-serif; color: #bbb;
+  }
+  .grid-name { font-size: 28px; font-weight: 700; line-height: 0.9; }
+  .grid-bottom {
+    display: flex; justify-content: space-between; align-items: flex-end;
+  }
+  .grid-role { font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase; font-family: -apple-system, sans-serif; color: #999; }
+  .grid-num { font-size: 22px; font-weight: 700; opacity: 0.07; }
+
+  /* ---- J: Letterpress / Ink Pressure ---- */
+  .preview-j {
+    background: #f5f3ef;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    position: relative;
+  }
+  .lp-noise {
+    position: absolute; inset: 0; opacity: 0.03;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 150px 150px;
+  }
+  .lp-text {
+    position: relative; z-index: 1;
+    font-size: 36px; font-weight: 700; line-height: 0.9;
+    text-align: center;
+    /* letterpress: slightly uneven ink — one side heavier */
+    text-shadow:
+      0.5px 0.5px 0px rgba(0,0,0,0.15),
+      1px 1px 0px rgba(0,0,0,0.05),
+      -0.5px -0.3px 0px rgba(0,0,0,0.08);
+    filter: url(#roughen);
+  }
+  .lp-sub {
+    position: relative; z-index: 1;
+    font-size: 9px; letter-spacing: 0.25em; text-transform: uppercase;
+    font-family: -apple-system, sans-serif; color: #888; margin-top: 8px;
+    text-shadow: 0.3px 0.3px 0 rgba(0,0,0,0.1);
+  }
+  .lp-rule {
+    width: 48px; height: 1px; background: rgba(0,0,0,0.2); margin: 4px 0;
+    box-shadow: 0 0.5px 0 rgba(0,0,0,0.1);
+  }
+  svg.lp-filter { position: absolute; width: 0; height: 0; }
+
+  /* ---- K: Paper Warmth Zones ---- */
+  .preview-k {
+    position: relative;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .zone-top {
+    flex: 1; background: #faf8f4; display: flex; align-items: center;
+    padding: 0 24px; border-bottom: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+  }
+  .zone-mid {
+    flex: 1.2; background: #f2efe9; display: flex; align-items: center;
+    padding: 0 24px; border-bottom: 1px solid rgba(0,0,0,0.06);
+    position: relative;
+  }
+  .zone-bot {
+    flex: 0.8; background: #ede9e1; display: flex; align-items: center;
+    padding: 0 24px;
+    position: relative;
+  }
+  .zone-label {
+    font-size: 8px; letter-spacing: 0.18em; text-transform: uppercase;
+    font-family: -apple-system, sans-serif; color: rgba(0,0,0,0.3); position: absolute; right: 12px; top: 8px;
+  }
+  .zone-text { font-size: 15px; font-weight: 700; }
+  .zone-sub { font-size: 10px; font-family: -apple-system, sans-serif; color: rgba(0,0,0,0.45); letter-spacing: 0.08em; }
+
+  /* ---- L: Micro Hover Choreography ---- */
+  .preview-l {
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 24px 28px;
+    gap: 2px;
+  }
+  .mh-label {
+    font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase;
+    font-family: -apple-system, sans-serif; color: #bbb; margin-bottom: 14px;
+  }
+  .mh-link {
+    display: block; font-size: 20px; font-weight: 700;
+    color: #000; text-decoration: none; padding: 6px 0;
+    border-bottom: 1px solid transparent;
+    position: relative; cursor: pointer;
+    transition: letter-spacing 0.3s cubic-bezier(0.22,1,0.36,1), border-color 0.3s;
+  }
+  .mh-link::before {
+    content: '→';
+    position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    font-size: 14px; opacity: 0; transition: opacity 0.3s, right 0.3s cubic-bezier(0.22,1,0.36,1);
+    font-family: -apple-system, sans-serif; font-weight: 400;
+  }
+  .mh-link:hover {
+    letter-spacing: 0.04em;
+    border-bottom-color: rgba(0,0,0,0.15);
+  }
+  .mh-link:hover::before { opacity: 1; right: 4px; }
+  .mh-link.active {
+    letter-spacing: 0.04em;
+    border-bottom-color: rgba(0,0,0,0.15);
+  }
+  .mh-link.active::before { opacity: 1; right: 4px; }
+  .mh-divider { width: 24px; height: 1px; background: #eee; margin: 4px 0; }
+
+  .note { font-size: 12px; color: #888; font-family: -apple-system, sans-serif; margin-top: 8px; line-height: 1.5; }
+</style>
+
+<svg class="lp-filter">
+  <defs>
+    <filter id="roughen">
+      <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+</svg>
+
+<p class="page-title">Texture & Depth — Round 3</p>
+<h2>More directions</h2>
+<p class="subtitle">Hover the links in L to see the micro-interaction live.</p>
+
+<div class="cards" data-multiselect>
+
+  <!-- I: Exposed Grid -->
+  <div class="card" data-choice="i" onclick="toggleSelect(this)">
+    <div class="card-preview preview-i">
+      <div class="grid-col gc1"></div>
+      <div class="grid-col gc2"></div>
+      <div class="grid-col gc3"></div>
+      <div class="grid-baseline gb1"></div>
+      <div class="grid-baseline gb2"></div>
+      <div class="grid-content">
+        <div class="grid-label">Portfolio</div>
+        <div class="grid-name">Beau<br>Goodwin</div>
+        <div class="grid-bottom">
+          <div class="grid-role">Copywriter</div>
+          <div class="grid-num">01</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-meta">
+      <div class="card-letter">I</div>
+      <h3>Exposed Grid</h3>
+      <p>Hairline column guides and baselines left visible as design elements. Feels like a Swiss editorial layout — structured, deliberate, typographer's eye.</p>
+    </div>
+  </div>
+
+  <!-- J: Letterpress -->
+  <div class="card" data-choice="j" onclick="toggleSelect(this)">
+    <div class="card-preview preview-j">
+      <div class="lp-noise"></div>
+      <div class="lp-text">Beau<br>Goodwin</div>
+      <div class="lp-rule"></div>
+      <div class="lp-sub">Copywriter &amp; Strategist</div>
+    </div>
+    <div class="card-meta">
+      <div class="card-letter">J</div>
+      <h3>Letterpress Ink</h3>
+      <p>Slightly uneven ink weight on type — like letters pressed into paper. Warm off-white background, subtle displacement filter. Physical craft feel with zero motion.</p>
+    </div>
+  </div>
+
+  <!-- K: Paper Warmth Zones -->
+  <div class="card" data-choice="k" onclick="toggleSelect(this)">
+    <div class="card-preview preview-k">
+      <div class="zone-top">
+        <span class="zone-label">nav</span>
+        <span class="zone-text">Beau Goodwin</span>
+      </div>
+      <div class="zone-mid">
+        <span class="zone-label">hero</span>
+        <div>
+          <div class="zone-text" style="font-size:20px;">Copywriter</div>
+          <div class="zone-sub" style="margin-top:4px;">Brand, Campaign, Editorial</div>
+        </div>
+      </div>
+      <div class="zone-bot">
+        <span class="zone-label">work</span>
+        <span class="zone-sub">Selected Projects →</span>
+      </div>
+    </div>
+    <div class="card-meta">
+      <div class="card-letter">K</div>
+      <h3>Paper Warmth Zones</h3>
+      <p>Sections shift from cool white to warm cream as you scroll down — like reading deeper into a physical document. Subtle, almost unconscious, but deeply tactile.</p>
+    </div>
+  </div>
+
+  <!-- L: Micro Hover Choreography -->
+  <div class="card" data-choice="l" onclick="toggleSelect(this)">
+    <div class="card-preview preview-l">
+      <div class="mh-label">Selected Work</div>
+      <a class="mh-link active">Brand Strategy</a>
+      <div class="mh-divider"></div>
+      <a class="mh-link" onmouseenter="this.classList.add('active')" onmouseleave="this.classList.remove('active')">Long-Form Copy</a>
+      <div class="mh-divider"></div>
+      <a class="mh-link" onmouseenter="this.classList.add('active')" onmouseleave="this.classList.remove('active')">Editorial</a>
+    </div>
+    <div class="card-meta">
+      <div class="card-letter">L</div>
+      <h3>Micro Hover Choreography</h3>
+      <p>On hover: letter-spacing opens slightly, a faint underline draws, an arrow slides in from off-screen. Three-step choreography — restrained but deeply satisfying.</p>
+    </div>
+  </div>
+
+</div>
+
+<p class="note">I pairs well with E (grid + crop marks = full print system). K is standalone — no animation at all. L works on any layout. J + D = maximum analog depth.</p>
