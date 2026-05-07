@@ -1,5 +1,24 @@
 import { styled } from "@mui/material/styles";
 
+export const SectionLabel = styled("div")(({ theme }) => ({
+  fontSize: "10px",
+  fontWeight: 400,
+  letterSpacing: "0.14em",
+  textTransform: "uppercase",
+  color: "#999",
+  marginBottom: "6px",
+  [theme.breakpoints.down("sm")]: {
+    marginBottom: "10px",
+  },
+}));
+
+export const Group = styled("div")({
+  display: "flex",
+  flexDirection: "column",
+  gap: "23px",
+  marginBottom: "30px",
+});
+
 export const List = styled("div")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",

@@ -1,13 +1,14 @@
-import { Container, Title, Subtitle } from "./index.styled";
+import { Container, Title } from "./index.styled";
 import { WorkProps } from "./types";
 
 export default function Work({ work }: WorkProps) {
+  const isExternal = work.page.startsWith("http");
   return (
-    <Container to={work.page}>
-      <Title>
-        {work.title} - {work.type}
-      </Title>
-      <Subtitle>{work.subtitle}</Subtitle>
+    <Container
+      to={work.page}
+      {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+    >
+      <Title>{work.title}</Title>
     </Container>
   );
 }

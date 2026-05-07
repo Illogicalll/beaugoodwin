@@ -26,16 +26,6 @@ export const Name = styled(Link)({
   textDecoration: "none",
   fontFamily: "inherit",
   lineHeight: 0.9,
-  "@media (hover: hover)": {
-    "&:hover": {
-      backgroundColor: "#000",
-      color: "#fff",
-    },
-  },
-  "&:active": {
-    backgroundColor: "#000",
-    color: "#fff",
-  },
 });
 
 export const SubText = styled("div")(({ theme }) => ({
@@ -57,16 +47,7 @@ export const Clickable = styled(Link)({
   color: "inherit",
   textDecoration: "none",
   fontFamily: "inherit",
+  fontWeight: 800,
   lineHeight: 0.9,
   marginBottom: "4px",
-  "@media (hover: hover)": {
-    "&:hover": {
-      backgroundColor: "#000",
-      color: "#fff",
-    },
-  },
-  "&:active": {
-    backgroundColor: "#000",
-    color: "#fff",
-  },
 });
