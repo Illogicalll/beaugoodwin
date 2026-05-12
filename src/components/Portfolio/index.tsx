@@ -7,7 +7,7 @@ export default function Portfolio() {
     { title: "FujiFilm X-Series", page: "/fujifilm" },
     { title: "Armadillo Enterprises", page: "/armadillo" },
     { title: "American Giant", page: "/american" },
-    { title: "National Gallery", page: "/idk" },
+    { title: "National Gallery", page: "/gallery" },
   ];
 
   const published: WorkType[] = [
