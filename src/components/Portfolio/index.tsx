@@ -1,6 +1,7 @@
 import { List, Group, SectionLabel } from "./index.styled";
 import { WorkType } from "./types";
 import Work from "./Work";
+import { campaigns } from "../Campaign/data";
 
 export default function Portfolio() {
   const speculative: WorkType[] = [
@@ -17,7 +18,15 @@ export default function Portfolio() {
   return (
     <List>
       <div>
-        <SectionLabel>Speculative</SectionLabel>
+        <SectionLabel>Speculative - Campaigns</SectionLabel>
+        <Group>
+          {campaigns.map((item) => (
+            <Work key={item.page} work={item} />
+          ))}
+        </Group>
+      </div>
+      <div>
+        <SectionLabel>Speculative - One Shots</SectionLabel>
         <Group>
           {speculative.map((item) => (
             <Work key={item.page} work={item} />

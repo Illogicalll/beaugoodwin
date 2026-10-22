@@ -31,4 +31,7 @@ export const Page = styled(Box)({
   flex: 1,
   display: "flex",
   flexDirection: "column",
+  "& img": {
+    cursor: "zoom-in",
+  },
 });

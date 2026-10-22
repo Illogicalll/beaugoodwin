@@ -5,7 +5,7 @@ export default function Info() {
     <Container>
       <Name to="/">Beau Goodwin</Name>
       <SubText>
-        <Tagline>Creative copywriter from London, UK</Tagline>
+        <Tagline>Creative Copywriter from London, UK</Tagline>
         <Clickable to="/about">About Me</Clickable>
         <Clickable to="/contact">Contact</Clickable>
       </SubText>
